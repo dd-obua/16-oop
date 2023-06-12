@@ -31,3 +31,4 @@ dan.calcAge();
 
 console.log(dan.__proto__);
 console.log(dan.__proto__ === Person.prototype);
+console.log(Person.prototype.isPrototypeOf(dan));
