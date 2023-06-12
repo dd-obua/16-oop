@@ -30,3 +30,4 @@ stel.calcAge();
 dan.calcAge();
 
 console.log(dan.__proto__);
+console.log(dan.__proto__ === Person.prototype);
