@@ -21,6 +21,7 @@ console.log(dan instanceof Person);
 console.log(denis instanceof Person);
 
 // Prototypes
-Person.prototype.calculateAge = () => now - this.birthYear;
+Person.prototype.calcAge = () => now - this.birthYear;
 console.log(joe);
 console.log(Person.prototype);
+dan.calcAge();
