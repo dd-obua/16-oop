@@ -28,3 +28,5 @@ console.log(Person.prototype);
 joe.calcAge();
 stel.calcAge();
 dan.calcAge();
+
+console.log(dan.__proto__);
