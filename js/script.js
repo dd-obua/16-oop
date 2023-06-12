@@ -24,6 +24,8 @@ console.log(denis instanceof Person);
 Person.prototype.calcAge = function (age) {
   console.log(now - this.birthYear);
 };
+Person.prototype.species = 'Homo sapiens';
+
 console.log(Person.prototype);
 joe.calcAge();
 stel.calcAge();
