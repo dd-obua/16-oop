@@ -1,3 +1,22 @@
 'use strict';
 
 const now = new Date().getFullYear();
+
+const Person = function (firstName, birthYear) {
+  // Instance properties
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+
+  // Instance method
+  this.calcAge = function () {
+    now - this.birthYear;
+  };
+};
+
+const joe = new Person('Joe', 1990);
+const stel = new Person('Stel', 1992);
+const dan = new Person('Dan', 1993);
+
+console.log(joe);
+console.log(stel);
+console.log(dan);
