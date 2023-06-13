@@ -46,3 +46,4 @@ console.log(dan.__proto__.__proto__.__proto__);
 
 const arr = [1, 2, 3, 4, 5, 6];
 console.log(arr.__proto__);
+console.log(arr.__proto__ === Array.prototype);
