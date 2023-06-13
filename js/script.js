@@ -54,3 +54,7 @@ Array.prototype.unique = function (arr) {
 };
 
 console.log('Unique:', arr.unique());
+
+const h1 = document.querySelector('h1');
+console.dir(h1);
+console.dir(x => x + 1);
