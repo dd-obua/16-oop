@@ -39,3 +39,7 @@ console.log(Person.prototype.isPrototypeOf(Person));
 console.log(dan.species, joe.species);
 console.log(dan.hasOwnProperty('firstName'));
 console.log(dan.hasOwnProperty('species'));
+
+console.log(dan.__proto__);
+console.log(dan.__proto__.__proto__);
+console.log(dan.__proto__.__proto__.__proto__);
