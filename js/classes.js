@@ -14,3 +14,4 @@ class Person {
 
 const richard = new Person('Richard', 1963);
 console.log(richard);
+console.log(richard.firstName);
