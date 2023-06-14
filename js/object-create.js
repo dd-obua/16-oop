@@ -7,6 +7,11 @@ const PersonProto = {
   calcAge() {
     return now - this.birthYear;
   },
+
+  init(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  },
 };
 
 const leo = Object.create(PersonProto);
