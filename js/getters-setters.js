@@ -53,5 +53,6 @@ console.log(denis.fullName);
 
 Memeber.hey = function () {
   console.log('Hey there! 🖐️');
+  console.log(this);
 };
 Memeber.hey();
