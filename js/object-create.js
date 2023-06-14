@@ -10,3 +10,8 @@ const PersonProto = {
 };
 
 const leo = Object.create(PersonProto);
+
+console.log(leo);
+leo.name = 'Leo Ogwang';
+leo.birthYear = 1985;
+const ageLeo = leo.calcAge();
