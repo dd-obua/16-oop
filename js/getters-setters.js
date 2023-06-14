@@ -31,7 +31,7 @@ class Memeber {
     return now - this.birthYear;
   }
 
-  // Validate name
+  // Validate name (set a property that already exists)
   set fullName(nm) {
     if (nm.includes(' ')) this._fullName = nm;
     else console.log(`${this._fullName} is not a full name.`);
