@@ -16,3 +16,7 @@ const richard = new Person('Richard', 1963);
 console.log(richard);
 console.log(richard.firstName);
 console.log(richard.calcAge());
+
+Person.prototype.greet = function () {
+  console.log(`Hey ${this.firstName}`);
+};
