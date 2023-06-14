@@ -8,3 +8,5 @@ const PersonProto = {
     return now - this.birthYear;
   },
 };
+
+const leo = Object.create(PersonProto);
