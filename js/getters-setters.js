@@ -30,7 +30,23 @@ class Memeber {
   get age() {
     return now - this.birthYear;
   }
+
+  // Validate name
+  set fullName(nm) {
+    if (nm.includes(' ')) this._fullName = nm;
+    else console.log(`${this._fullName} is not a full name.`);
+  }
+
+  get fullName() {
+    return this._fullName;
+  }
 }
 
 const jasinta = new Memeber('Jasinta Ongom', 1963);
 console.log(jasinta.age);
+
+const dan = new Memeber('Dan', 1993);
+console.log(dan.fullName);
+
+const denis = new Memeber('Denis Obua', 1993);
+console.log(denis.fullName);
