@@ -22,8 +22,8 @@ console.log(acct.txns);
 const now = new Date().getFullYear();
 
 class Memeber {
-  constructor(firstName, birthYear) {
-    this.firstName = firstName;
+  constructor(fullName, birthYear) {
+    this.fullName = fullName;
     this.birthYear = birthYear;
   }
 
@@ -32,5 +32,5 @@ class Memeber {
   }
 }
 
-const jasinta = new Memeber('Jasinta', 1963);
+const jasinta = new Memeber('Jasinta Ongom', 1963);
 console.log(jasinta.age);
