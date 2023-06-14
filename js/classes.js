@@ -20,3 +20,5 @@ console.log(richard.calcAge());
 Person.prototype.greet = function () {
   console.log(`Hey ${this.firstName}`);
 };
+
+richard.greet();
