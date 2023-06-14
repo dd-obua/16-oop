@@ -15,3 +15,8 @@ console.log(leo);
 leo.name = 'Leo Ogwang';
 leo.birthYear = 1985;
 const ageLeo = leo.calcAge();
+
+console.log(leo.name);
+console.log(ageLeo);
+console.log(leo.__proto__);
+console.log();
