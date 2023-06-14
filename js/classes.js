@@ -6,3 +6,6 @@ class Person {
     this.birthYear = birthYear;
   }
 }
+
+const richard = new Person('Richard', 1963);
+console.log(richard);
