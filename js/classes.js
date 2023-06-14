@@ -1,4 +1,5 @@
 'use strict';
+const now = new Date().getFullYear();
 
 class Person {
   constructor(firstName, birthYear) {
