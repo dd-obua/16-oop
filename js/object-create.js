@@ -29,3 +29,4 @@ console.log();
 const sharon = Object.create(PersonProto);
 sharon.init('Sharon', 1991);
 console.log(sharon);
+console.log(sharon.calcAge());
