@@ -58,7 +58,7 @@ console.log(dan.fullName);
 const denis = new Memeber('Denis Obua', 1993);
 console.log(denis.fullName);
 
-// Create stati method on Member constructor 
+// Create static method on Member constructor 
 Memeber.hey = function () {
   console.log('Hey there! 🖐️');
   console.log(this);
