@@ -52,6 +52,6 @@ const denis = new Memeber('Denis Obua', 1993);
 console.log(denis.fullName);
 
 Memeber.hey = function () {
-  console.log('Hey!');
+  console.log('Hey there! 🖐️');
 };
 Memeber.hey();
