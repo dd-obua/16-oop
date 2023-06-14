@@ -25,3 +25,7 @@ console.log(leo.name);
 console.log(ageLeo);
 console.log(leo.__proto__);
 console.log();
+
+const sharon = Object.create(PersonProto);
+sharon.init('Sharon', 1991);
+console.log(sharon);
