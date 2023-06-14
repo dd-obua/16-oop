@@ -6,6 +6,10 @@ class Person {
     this.firstName = firstName;
     this.birthYear = birthYear;
   }
+
+  calcAge() {
+    return now - this.birthYear;
+  }
 }
 
 const richard = new Person('Richard', 1963);
