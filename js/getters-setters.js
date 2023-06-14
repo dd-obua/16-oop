@@ -27,6 +27,7 @@ class Memeber {
     this.birthYear = birthYear;
   }
 
+  // create instance methods
   get age() {
     return now - this.birthYear;
   }
@@ -39,6 +40,12 @@ class Memeber {
 
   get fullName() {
     return this._fullName;
+  }
+
+  // create static method
+  static hey() {
+    console.log('Hey there! 🖐️');
+    console.log(this);
   }
 }
 
