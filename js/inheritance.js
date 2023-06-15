@@ -8,7 +8,7 @@ const Person = function (firstName, birthYear) {
 };
 
 Person.prototype.calcAge = function () {
-  return now - this.birtyYear;
+  return now - this.birthYear;
 };
 
 const Student = function (firstName, birthYear, course) {
