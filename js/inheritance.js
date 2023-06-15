@@ -16,3 +16,6 @@ const Student = function (firstName, birthYear, course) {
   this.birthYear = birthYear;
   this.course = course;
 };
+
+const max = new Student('Max', 2002, 'Business Administration');
+console.log(max);
