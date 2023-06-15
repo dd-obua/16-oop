@@ -26,5 +26,6 @@ Student.prototype.introduce = function () {
 const max = new Student('Max', 2002, 'Business Administration');
 console.log(max);
 console.log(max.introduce());
-
 console.log(max.calcAge());
+
+Student.prototype.constructor = Student;
