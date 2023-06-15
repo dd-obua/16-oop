@@ -33,3 +33,7 @@ Student.prototype.constructor = Student;
 console.log(max.__proto__);
 console.log(max.__proto__.__proto__);
 console.log(max.__proto__.__proto__.__proto__);
+
+console.log(max instanceof Student);
+console.log(max instanceof Person);
+console.log(max instanceof Object);  
