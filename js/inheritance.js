@@ -10,3 +10,9 @@ const Person = function (firstName, birthYear) {
 Person.prototype.calcAge = function () {
   return now - this.birtyYear;
 };
+
+const Student = function (firstName, birthYear, course) {
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+  this.course = course;
+};
