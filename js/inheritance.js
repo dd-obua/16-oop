@@ -17,5 +17,9 @@ const Student = function (firstName, birthYear, course) {
   this.course = course;
 };
 
+Student.prototype.introduce = function () {
+  return `My name is ${this.firstName} and I study ${this.course}.`;
+};
+
 const max = new Student('Max', 2002, 'Business Administration');
 console.log(max);
