@@ -29,3 +29,7 @@ console.log(max.introduce());
 console.log(max.calcAge());
 
 Student.prototype.constructor = Student;
+
+console.log(max.__proto__);
+console.log(max.__proto__.__proto__);
+console.log(max.__proto__.__proto__.__proto__);
