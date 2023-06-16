@@ -14,3 +14,5 @@ class PersonProto {
 }
 
 const peter = Object.create(PersonProto);
+
+const StudentProto = Object.create(PersonProto);
