@@ -11,6 +11,10 @@ class Account {
     console.log(`Thank you for opening an account ${this.owner}`);
   }
 
+  getTxns() {
+    return this._txns;
+  }
+
   transact(val) {
     this._txns.push(val);
   }
