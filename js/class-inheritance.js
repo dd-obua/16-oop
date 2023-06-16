@@ -41,9 +41,10 @@ class Student extends Person {
   }
 
   introduce() {
-    return `My name is ${this.fullName} and I study ${this.course}`;
+    return `My name is ${this.fullName} and I study ${this.course}.`;
   }
 }
 
 const willy = new Student('Willy Oneka', 2000, 'Computer Science');
 console.log(willy);
+console.log(willy.introduce());
