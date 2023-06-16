@@ -33,3 +33,10 @@ class Person {
     return `Hey there :raised_hand_with_fingers_splayed:`;
   }
 }
+
+class Student extends Person {
+  constructor(fullName, birthYear, courses) {
+    super(fullName, birthYear);
+    this.course = course;
+  }
+}
