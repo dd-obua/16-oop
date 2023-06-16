@@ -16,28 +16,30 @@ class Account {
     console.log(`Thank you for opening an account ${this.owner}`);
   }
 
+  // Private methods
+  #transact(val) {
+    this.#txns.push(val);
+  }
+
+  #approveLoan(val) {
+    return true;
+  }
+
+  // Public methods (together form the public interface)
   getTxns() {
     return this.#txns;
   }
 
-  _transact(val) {
-    this.#txns.push(val);
-  }
-
   deposit(val) {
-    this._transact(val);
+    this.#transact(val);
   }
 
   withdraw(val) {
-    this._transact(-val);
-  }
-
-  _approveLoan(val) {
-    return true;
+    this.#transact(-val);
   }
 
   requestLoan(val) {
-    if (this._approveLoan(val)) this.deposit(val);
+    if (this.#approveLoan(val)) this.deposit(val);
   }
 }
 
