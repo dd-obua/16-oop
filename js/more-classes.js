@@ -12,12 +12,16 @@ class Account {
   }
 
   // Public interface of Account object
-  deposit(val) {
+  transact(val) {
     this.txns.push(val);
   }
 
+  deposit(val) {
+    this.transact(val);
+  }
+
   withdraw(val) {
-    this.deposit(-val);
+    this.transact(-val);
   }
 }
 
