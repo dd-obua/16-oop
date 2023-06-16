@@ -2,8 +2,10 @@
 
 class Account {
   // Public fields
-  _txns = [];
   locale = navigator.language;
+
+  // Private fields
+  #txns = [];
 
   constructor(owner, currency, pin) {
     this.owner = owner;
@@ -14,11 +16,11 @@ class Account {
   }
 
   getTxns() {
-    return this._txns;
+    return this.#txns;
   }
 
   _transact(val) {
-    this._txns.push(val);
+    this.#txns.push(val);
   }
 
   deposit(val) {
