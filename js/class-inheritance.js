@@ -48,3 +48,4 @@ class Student extends Person {
 const willy = new Student('Willy Oneka', 2000, 'Computer Science');
 console.log(willy);
 console.log(willy.introduce());
+console.log(willy.calcAge());
