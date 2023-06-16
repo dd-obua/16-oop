@@ -4,7 +4,7 @@ const now = new Date().getFullYear();
 
 const PersonProto = {
   calcAge() {
-    return now - this.birthYear();
+    return now - this.birthYear;
   },
 
   init(fullName, birthYear) {
