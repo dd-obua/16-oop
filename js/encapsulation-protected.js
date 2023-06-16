@@ -20,11 +20,11 @@ class Account {
   }
 
   deposit(val) {
-    this.transact(val);
+    this._transact(val);
   }
 
   withdraw(val) {
-    this.transact(-val);
+    this._transact(-val);
   }
 
   _approveLoan(val) {
