@@ -25,7 +25,7 @@ class Person {
     else console.log(`${this.fullName} is not a full name.`);
   }
 
-  set fullName(name) {
+  get fullName() {
     return this._fullName;
   }
 
