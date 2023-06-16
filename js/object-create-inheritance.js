@@ -2,16 +2,16 @@
 
 const now = new Date().getFullYear();
 
-class PersonProto {
+const PersonProto = {
   calcAge() {
     return now - this.birthYear();
-  }
+  },
 
   init(fullName, birthYear) {
     this.fullName = fullName;
     this.birthYear = birthYear;
-  }
-}
+  },
+};
 
 const peter = Object.create(PersonProto);
 
