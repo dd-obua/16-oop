@@ -38,3 +38,7 @@ class Account {
 
 const acct1 = new Account('Dan', 'UGX', 1111);
 console.log(acct1);
+
+acct1.deposit(450);
+acct1.withdraw(300);
+acct1.requestLoan(1000);
