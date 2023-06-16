@@ -1,16 +1,17 @@
 'use strict';
 
 class Account {
-  // Public fields
+  // Public fields (available on the instances NOT on the prototype)
   locale = navigator.language;
 
-  // Private fields
+  // Private fields (available on the instances NOT on the prototype)
   #txns = [];
+  #pin;
 
   constructor(owner, currency, pin) {
     this.owner = owner;
     this.currency = currency;
-    this._pin = pin;
+    this.#pin = pin;
 
     console.log(`Thank you for opening an account ${this.owner}`);
   }
