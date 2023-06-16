@@ -3,8 +3,8 @@
 const now = new Date().getFullYear();
 
 class Person {
-  constructor(firstName, birthYear) {
-    this.firstName = firstName;
+  constructor(fullName, birthYear) {
+    this.fullName = fullName;
     this.birthYear = birthYear;
   }
 
@@ -13,7 +13,7 @@ class Person {
   }
 
   greet() {
-    return `Hey ${this.firstName}.`;
+    return `Hey ${this.fullName}.`;
   }
 
   getAge() {
