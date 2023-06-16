@@ -35,8 +35,11 @@ class Person {
 }
 
 class Student extends Person {
-  constructor(fullName, birthYear, courses) {
+  constructor(fullName, birthYear, course) {
     super(fullName, birthYear);
     this.course = course;
   }
 }
+
+const willy = new Student('Willy Oneka', 2000, 'Computer Science');
+console.log(willy);
