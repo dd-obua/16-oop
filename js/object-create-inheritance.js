@@ -12,3 +12,5 @@ class PersonProto {
     this.birthYear = birthYear;
   }
 }
+
+const peter = Object.create(PersonProto);
