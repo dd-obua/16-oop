@@ -1,16 +1,12 @@
 'use strict';
 
 class Account {
-  // Public fileds (added to the instances NOT prototype)
-  locale = navigator.language;
-
-  // Private fileds
-  #txns = [];
-
   constructor(owner, currency, pin) {
     this.owner = owner;
     this.currency = currency;
     this._pin = pin;
+    locale = navigator.language;
+    _txns = [];
 
     console.log(`Thank you for opening an account ${this.owner}`);
   }
