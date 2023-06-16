@@ -24,3 +24,6 @@ StudentProto.init = function (fullName, birthYear, course) {
 };
 
 const pius = Object.create(StudentProto);
+
+pius.init('Pius Omoding', 1996, 'Quantitative Economics');
+console.log(pius);
