@@ -1,12 +1,14 @@
 'use strict';
 
 class Account {
+  // Public fileds
+  _txns = [];
+  locale = navigator.language;
+
   constructor(owner, currency, pin) {
     this.owner = owner;
     this.currency = currency;
     this._pin = pin;
-    this._txns = [];
-    this.locale = navigator.language;
 
     console.log(`Thank you for opening an account ${this.owner}`);
   }
