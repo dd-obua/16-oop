@@ -23,6 +23,10 @@ StudentProto.init = function (fullName, birthYear, course) {
   this.course = course;
 };
 
+StudentProto.introduce = function () {
+  return `My name is ${this.fullName} and I study ${this.course}`;
+};
+
 const pius = Object.create(StudentProto);
 
 pius.init('Pius Omoding', 1996, 'Quantitative Economics');
