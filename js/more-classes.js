@@ -10,6 +10,14 @@ class Account {
 
     console.log(`Thanks for opening an account ${owner}`);
   }
+
+  deposit(val) {
+    this.txns.push(val);
+  }
+
+  withdraw(val) {
+    this.deposit(-val);
+  }
 }
 
 const acct1 = new Account('Dan', 'UGX', 1111);
