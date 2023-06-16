@@ -18,7 +18,7 @@ class Account {
 
   // Private methods
   #transact(val) {
-    this.#txns.push(val);
+    return this.#txns.push(val);
   }
 
   #approveLoan(val) {
@@ -31,11 +31,11 @@ class Account {
   }
 
   deposit(val) {
-    this.#transact(val);
+    return this.#transact(val);
   }
 
   withdraw(val) {
-    this.#transact(-val);
+    return this.#transact(-val);
   }
 
   requestLoan(val) {
