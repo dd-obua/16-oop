@@ -4,7 +4,7 @@ class Account {
   constructor(owner, currency, pin) {
     this.owner = owner;
     this.currency = currency;
-    this.pin = pin;
+    this._pin = pin;
     this._txns = [];
     this.locale = navigator.language;
 
@@ -15,7 +15,7 @@ class Account {
     return this._txns;
   }
 
-  transact(val) {
+  _transact(val) {
     this._txns.push(val);
   }
 
@@ -27,12 +27,12 @@ class Account {
     this.transact(-val);
   }
 
-  approveLoan(val) {
+  _approveLoan(val) {
     return true;
   }
 
   requestLoan(val) {
-    if (this.approveLoan(val)) this.deposit(val);
+    if (this._approveLoan(val)) this.deposit(val);
   }
 }
 
