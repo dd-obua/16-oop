@@ -7,3 +7,6 @@ class Account {
     this.pin = pin;
   }
 }
+
+const acct1 = new Account('Dan', 'UGX', 1111);
+console.log(acct1);
