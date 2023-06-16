@@ -23,6 +23,17 @@ class Account {
   withdraw(val) {
     this.transact(-val);
   }
+
+  approveLoan(val) {
+    return true;
+  }
+
+  requestLoan(val) {
+    if (this.approveLoan(val)) {
+      this.deposit(val);
+    }
+    console.log('Loan approved');
+  }
 }
 
 const acct1 = new Account('Dan', 'UGX', 1111);
