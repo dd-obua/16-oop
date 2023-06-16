@@ -22,5 +22,3 @@ class Account {
 
 const acct1 = new Account('Dan', 'UGX', 1111);
 console.log(acct1);
-acct1.txns.push(200);
-acct1.txns.push(-100);
