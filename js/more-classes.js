@@ -11,6 +11,7 @@ class Account {
     console.log(`Thanks for opening an account ${owner}`);
   }
 
+  // Public interface of Account object
   deposit(val) {
     this.txns.push(val);
   }
