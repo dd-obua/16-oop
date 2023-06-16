@@ -39,6 +39,10 @@ class Student extends Person {
     super(fullName, birthYear);
     this.course = course;
   }
+
+  introduce() {
+    return `My name is ${this.fullName} and I study ${this.course}`;
+  }
 }
 
 const willy = new Student('Willy Oneka', 2000, 'Computer Science');
