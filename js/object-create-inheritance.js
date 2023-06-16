@@ -16,3 +16,9 @@ const PersonProto = {
 const peter = Object.create(PersonProto);
 
 const StudentProto = Object.create(PersonProto);
+
+StudentProto.init = function (fullName, birthYear, course) {
+  PersonProto.init.call(this, fullName, birthYear);
+  this.course = course;
+  this.course = course;
+};
