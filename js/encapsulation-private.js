@@ -53,3 +53,6 @@ console.log(acct1);
 acct1.deposit(450);
 acct1.withdraw(300);
 acct1.requestLoan(1000);
+
+acct1.deposit(400).deposit(500).withdraw(300).requestLoan(1500).withdraw(1000);
+console.log(acct1.getTxns());
