@@ -35,3 +35,6 @@ class Account {
     if (this._approveLoan(val)) this.deposit(val);
   }
 }
+
+const acct1 = new Account('Dan', 'UGX', 1111);
+console.log(acct1);
