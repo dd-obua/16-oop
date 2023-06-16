@@ -2,29 +2,40 @@
 
 const now = new Date().getFullYear();
 
-const PersonProto = {
-  calcAge() {
-    return now - this.birthYear;
-  },
-
-  init(firstName, birthYear) {
-    this.firstName = firstName;
-    this.birthYear = birthYear;
-  },
+const Person = function (firstName, birthYear) {
+  this.firstName = firstName;
+  this.birthYear = birthYear;
 };
 
-const carl = Object.create(PersonProto);
-console.log(carl);
-carl.name = 'Carlos';
-carl.birthYear = 1988;
-const ageCarl = carl.calcAge();
-console.log(ageCarl);
+Person.prototype.calcAge = function () {
+  return now - this.birthYear;
+};
 
-console.log(carl.__proto__);
-console.log(PersonProto);
-console.log(carl.__proto__ === PersonProto);
+const Student = function (firstName, birthYear, course) {
+  Person.call(this, firstName, birthYear);
+  this.course = course;
+};
 
-const leo = Object.create(PersonProto);
-leo.init('Leonard', 2002);
-console.log(leo);
-console.log(leo.calcAge());
+Student.prototype = Object.create(Person.prototype);
+
+Student.prototype.introduce = function () {
+  return `My name is ${this.firstName} and I study ${this.course}.`;
+};
+
+Student.prototype.constructor = Student;
+
+const mike = new Student('Mike', 2002, 'Computer Science');
+console.log(mike);
+console.log(mike.introduce());
+console.log(mike.calcAge());
+
+console.log(mike.__proto__);
+console.log(mike.__proto__.__proto__);
+console.log(mike.__proto__.__proto__.__proto__);
+
+console.dir(Student.prototype.constructor);
+console.log();
+
+console.log(mike instanceof Student);
+console.log(mike instanceof Person);
+console.log(mike instanceof Object);
