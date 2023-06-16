@@ -1,7 +1,7 @@
 'use strict';
 
 class Account {
-  // Public fileds
+  // Public fileds (added to the instances NOT prototype)
   _txns = [];
   locale = navigator.language;
 
