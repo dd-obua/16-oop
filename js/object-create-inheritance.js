@@ -22,3 +22,5 @@ StudentProto.init = function (fullName, birthYear, course) {
   this.course = course;
   this.course = course;
 };
+
+const pius = Object.create(StudentProto);
