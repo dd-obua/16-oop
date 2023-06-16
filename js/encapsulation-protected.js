@@ -2,8 +2,10 @@
 
 class Account {
   // Public fileds (added to the instances NOT prototype)
-  _txns = [];
   locale = navigator.language;
+
+  // Private fileds
+  #txns = [];
 
   constructor(owner, currency, pin) {
     this.owner = owner;
