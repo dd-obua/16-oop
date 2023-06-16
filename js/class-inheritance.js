@@ -43,6 +43,14 @@ class Student extends Person {
   introduce() {
     return `My name is ${this.fullName} and I study ${this.course}.`;
   }
+
+  calcAge() {
+    return `I am ${
+      now - this.birthYear
+    } years old, but as a student, I feel like I am ${
+      now - this.birthYear + 10
+    }.`;
+  }
 }
 
 const willy = new Student('Willy Oneka', 2000, 'Computer Science');
