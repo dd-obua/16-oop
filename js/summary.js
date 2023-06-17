@@ -50,3 +50,5 @@ class Student extends Person {
     console.log(`There are ${this.numSubjects} subjects.`);
   }
 }
+
+const student = new Student('Dan', 1993, 2014, 'Computer Science');
